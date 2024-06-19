@@ -81,6 +81,17 @@ Para contribuir, por favor seguir los siguientes pasos:
 4. Solicitar un Pull Request a la rama `dev` del repositorio original
 
 
+## 👩‍💻 Autores
+
+
+_Cristian Ivan Diaz_
+- Github: https://github.com/CristianDecidueye
+
+_Claudia Alejandra Torres_
+- Github: https://github.com/Claudia604
+
+_Iñaki Zavaleta_
+- Github: https://github.com/inakizavaleta10
 
 
 
