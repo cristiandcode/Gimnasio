@@ -93,7 +93,13 @@ _Claudia Alejandra Torres_
 _Iñaki Zavaleta_
 - Github: https://github.com/inakizavaleta10
 
+## 📞 Contactanos
 
+| Medio    | Link                                    |
+| -------- | --------------------------------------- |
+| Email    | gym@gmail.com                   |
+| Twitter  | https://twitter.com/gym        |
+| Linkedin | https://www.linkedin.com/in/gym |
 
 
 
