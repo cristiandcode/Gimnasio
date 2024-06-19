@@ -1,5 +1,7 @@
 import { Container, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { login } from "../helpers/queries";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const {
@@ -10,6 +12,19 @@ const Login = () => {
 
   const onSubmit = (usuario) => {
     console.log(usuario);
+    if (login(usuario)) {
+      Swal.fire(
+        "¡Bienvenido a STK GYM!",
+        "Has iniciado sesión correctamente",
+        "success"
+      );
+    } else {
+      Swal.fire(
+        "Error al iniciar sesión",
+        "Correo o contraseña incorrectos",
+        "error"
+      );
+    }
   };
 
   return (
