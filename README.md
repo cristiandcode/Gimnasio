@@ -101,6 +101,9 @@ _Iñaki Zavaleta_
 | Twitter  | https://twitter.com/gym        |
 | Linkedin | https://www.linkedin.com/in/gym |
 
+## Licencia
+
+codigo y documentacion copyright 2023-2024 de los autores de GYM. Destribuido bajo la licencia de WIT. consulte el archivo LICENSE.md para obtener mas informacion.
 
 
 
