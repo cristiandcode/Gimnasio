@@ -33,3 +33,57 @@
 - [👩‍💻 Autores](#👩‍💻-autores)
 - [📞 Contactanos](#📞-contactanos)
 - [📋 Licencia](#licencia)
+
+## 💻 Sobre GYM
+<img src="./img/nuestroLocal.jpg" />
+
+# Descripcion mas a fondo del trabajo
+
+## ⚒️ Tecnologías Implementadas
+
+| Tecnologias                           | Version |
+| ------------------------------------- | ------- |
+| [![HTML5-badge]][HTML-url]            | **5**   |
+| [![CSS3-badge]][CSS3-url]             | **3**   |
+| [![BOOTSTRAP-badge]][BOOTSTRAP-url]   | **5.3** |
+| [![GitHub-badge]][GitHub-url]         | -       |
+| [![javaScript-badge]][javaScript-url] | -       |
+| [![Trello-badge]][Trello-url]         | -       |
+| [![REACT-badge]][React-url]           | -       |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- markdown limks & images -->
+
+[HTML5-badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://html.com/tags/
+[CSS3-badge]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[CSS3-url]: https://www.w3.org/Style/CSS/
+[BOOTSTRAP-badge]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[BOOTSTRAP-url]: https://getbootstrap.com/
