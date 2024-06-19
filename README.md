@@ -51,6 +51,16 @@
 | [![Trello-badge]][Trello-url]         | -       |
 | [![REACT-badge]][React-url]           | -       |
 
+## ✅Requisitos
+
+- Windows 10 o superior
+- Git
+- Visual Code
+- Extension "Live Server" para Visual Code
+
+> [!IMPORTANT]
+> Para que funcione el proyecto en su PC debe cumplir con **todos** los requisitos
+
 
 
 
