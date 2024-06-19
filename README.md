@@ -37,7 +37,7 @@
 ## 💻 Sobre GYM
 <img src="./img/nuestroLocal.jpg" />
 
-# Descripcion mas a fondo del trabajo
+# Descripcion mas a fondo del proyecto
 
 ## ⚒️ Tecnologías Implementadas
 
