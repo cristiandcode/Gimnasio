@@ -16,6 +16,7 @@ const AboutUsPage = () => {
                                 Nuestros valores son...
                             </Card.Text>
                         </Card.Body>
+                        
                     </Card>
                 </Col>
                 <Col>
