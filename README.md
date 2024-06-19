@@ -28,3 +28,8 @@
 - [💻 Sobre Gym](#💻-sobre-gym)
 - [⚒️ Tecnologias](#⚒️-tecnologías-implementadas)
 - [✅ Requisitos](#✅requisitos)
+- [💿 Instalacion](#💿instalacion-y-uso)
+- [🤝 Contribuir](#🤝como-contribuir)
+- [👩‍💻 Autores](#👩‍💻-autores)
+- [📞 Contactanos](#📞-contactanos)
+- [📋 Licencia](#licencia)
