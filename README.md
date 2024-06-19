@@ -79,7 +79,7 @@
 
 
 
-<!-- markdown limks & images -->
+<!-- markdown links & images -->
 
 [HTML5-badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [HTML-url]: https://html.com/tags/
