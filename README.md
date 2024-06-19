@@ -71,7 +71,14 @@ git clone https://github.com/CristianDecidueye/Gimnasio.git
 -Ejecutar el archivo `index.html` npm run dev
 -Una vez instalada la aplicacion, la misma se pondra previsuar en el siguiente link `http://localhost:5173/`
 
+## 🤝Como contribuir
 
+Para contribuir, por favor seguir los siguientes pasos:
+
+1. Hacer un Fork del repositorio y clonarlo
+2. Crear desde la rama `dev` una nueva rama para comenzar `git checkout -b nueva-rama`
+3. Realizar cambios y subirlos a su fork `git push origin nueva-rama`
+4. Solicitar un Pull Request a la rama `dev` del repositorio original
 
 
 
