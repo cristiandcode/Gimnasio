@@ -11,6 +11,7 @@ import Registro from "./components/pages/Registro";
 import { useState } from "react";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import ListaRutasAdministrador from "./components/routes/ListaRutasAdministrador";
+import AboutPage from "./components/pages/AboutUs";
 
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
@@ -39,6 +40,7 @@ function App() {
           element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
         ></Route>
         <Route exact path="/Registro/" element={<Registro></Registro>}></Route>
+        <Route exact path="/about" element={<AboutPage/>}/>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
