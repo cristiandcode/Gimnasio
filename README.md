@@ -61,7 +61,15 @@
 > [!IMPORTANT]
 > Para que funcione el proyecto en su PC debe cumplir con **todos** los requisitos
 
+Clonar repositorio:
 
+```bash
+git clone https://github.com/CristianDecidueye/Gimnasio.git
+```
+
+-Asegurarse que se encuentra la rama `main`
+-Ejecutar el archivo `index.html` npm run dev
+-Una vez instalada la aplicacion, la misma se pondra previsuar en el siguiente link `http://localhost:5173/`
 
 
 
