@@ -2,6 +2,7 @@ import { Container, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { login } from "../helpers/queries";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const {
@@ -9,6 +10,7 @@ const Login = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const navegacion = useNavigate();
 
   const onSubmit = (usuario) => {
     console.log(usuario);
@@ -18,6 +20,7 @@ const Login = () => {
         "Has iniciado sesión correctamente",
         "success"
       );
+      navegacion("/administrador");
     } else {
       Swal.fire(
         "Error al iniciar sesión",
