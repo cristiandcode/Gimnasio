@@ -1,8 +1,16 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
-import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
-const Menu = () => {
+const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
+  const navegacion = useNavigate();
+
+  const logout = () => {
+    localStorage.removeItem("usuarioGym");
+    setUsuarioLogueado("");
+    navegacion("/");
+  };
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -15,15 +23,25 @@ const Menu = () => {
             <NavLink end className="nav-link" to="/">
               Inicio
             </NavLink>
-            <NavLink end className="nav-link" to="/Administrador">
-              Administrador
-            </NavLink>
-            <NavLink end className="nav-link" to="/Login">
-              Login
-            </NavLink>
-            <NavLink end className="nav-link" to="/Registro">
-              Registro
-            </NavLink>
+            {usuarioLogueado.length > 0 ? (
+              <>
+                <NavLink end className="nav-link" to="/administrador">
+                  Administrador
+                </NavLink>
+                <Button variant="link" className="nav-link" onClick={logout}>
+                  logout
+                </Button>
+              </>
+            ) : (
+              <>
+                <NavLink end className="nav-link" to="/login">
+                  Login
+                </NavLink>
+                <NavLink end className="nav-link" to="/registro">
+                  Registro
+                </NavLink>
+              </>
+            )}
             <NavDropdown title="Planes" id="basic-nav-dropdown">
               <NavDropdown.Item>Musculación</NavDropdown.Item>
               <NavDropdown.Item>Clases</NavDropdown.Item>
