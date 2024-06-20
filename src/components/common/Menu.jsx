@@ -1,8 +1,11 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.jpg";
 import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import React, { useState } from "react";
 
 const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
+  const [showSupplements, setShowSupplements] = useState(false);
+  const [showPlanes, setShowPlanes] = useState(false);
   const navegacion = useNavigate();
 
   const logout = () => {
@@ -42,12 +45,24 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
                 </NavLink>
               </>
             )}
-            <NavDropdown title="Planes" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Planes"
+              id="basic-nav-dropdown"
+              show={showPlanes}
+              onMouseEnter={() => setShowPlanes(true)}
+              onMouseLeave={() => setShowPlanes(false)}
+            >
               <NavDropdown.Item>Musculación</NavDropdown.Item>
               <NavDropdown.Item>Clases</NavDropdown.Item>
               <NavDropdown.Item>Full</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Suplementos" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Suplementos"
+              id="basic-nav-dropdown"
+              show={showSupplements}
+              onMouseEnter={() => setShowSupplements(true)}
+              onMouseLeave={() => setShowSupplements(false)}
+            >
               <NavDropdown.Item>Proteinas</NavDropdown.Item>
               <NavDropdown.Item>Creatinas</NavDropdown.Item>
               <NavDropdown.Item>Aminoacidos</NavDropdown.Item>

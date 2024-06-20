@@ -39,8 +39,11 @@ function App() {
           path="/Login/"
           element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
         ></Route>
+ index
+        <Route exact path="/Registro/" element={<Registro></Registro>}></Route>{" "}
         <Route exact path="/Registro/" element={<Registro></Registro>}></Route>
         <Route exact path="/about" element={<AboutPage/>}/>
+ dev
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
