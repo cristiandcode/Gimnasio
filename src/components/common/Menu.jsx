@@ -68,6 +68,9 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
               <NavDropdown.Item>Aminoacidos</NavDropdown.Item>
               <NavDropdown.Item>Multivitaminicos</NavDropdown.Item>
             </NavDropdown>
+            <NavLink end className="nav-link" to="/about">
+              About us
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
