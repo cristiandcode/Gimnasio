@@ -40,7 +40,6 @@ function App() {
         ></Route>
  index
         <Route exact path="/Registro/" element={<Registro></Registro>}></Route>{" "}
-        <Route exact path="/about" element={<AboutPage/>}/>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

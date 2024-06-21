@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Administrador from "../pages/Administrador";
 import FormularioProteinas from "../pages/productos/FormularioProteinas";
+import Clases from "../pages/paginasAdministrador/Clases";
 
 const ListaRutasAdministrador = () => {
   return (
