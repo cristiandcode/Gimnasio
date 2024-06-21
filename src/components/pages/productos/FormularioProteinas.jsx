@@ -1,5 +1,5 @@
 const FormularioProteinas = () => {
-  return <div></div>;
+  return <section className="mainSection"></section>;
 };
 
 export default FormularioProteinas;

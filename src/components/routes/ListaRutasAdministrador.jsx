@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Administrador from "../pages/Administrador";
 import FormularioProteinas from "../pages/productos/FormularioProteinas";
-import Clases from "../pages/paginasAdministrador/Clases";
+import FormularioClases from "../pages/paginasAdministrador/FormularioClases";
 
 const ListaRutasAdministrador = () => {
   return (
@@ -16,6 +16,16 @@ const ListaRutasAdministrador = () => {
         exact
         path="/editarProterinas"
         element={<FormularioProteinas></FormularioProteinas>}
+      ></Route>
+      <Route
+        exact
+        path="/crearClases"
+        element={<FormularioClases></FormularioClases>}
+      ></Route>
+      <Route
+        exact
+        path="/editarClases"
+        element={<FormularioClases></FormularioClases>}
       ></Route>
     </Routes>
   );

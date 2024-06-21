@@ -1,4 +1,5 @@
 import { Container, Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Administrador = () => {
   return (
@@ -7,9 +8,12 @@ const Administrador = () => {
         Bienvenido al panel de Administración
       </h1>
       <hr />
-      <h2 className="my-5 text-center fs-2">
-        Administrar clases del dia
-      </h2>
+      <div className="d-flex justify-content-between align-items-center mt-5">
+        <h2 className="my-5 text-center">Clases del dia</h2>
+        <Link className="btn btn-dark" to={"/Administrador/crearClases"}>
+          <i className="bi bi-file-earmark-plus"></i>
+        </Link>
+      </div>
       <Table responsive striped bordered hover>
         <thead>
           <tr className="text-center">
@@ -17,6 +21,7 @@ const Administrador = () => {
             <th>Profesor</th>
             <th>Horario</th>
             <th>Alumnos</th>
+            <th>Opciones</th>
           </tr>
         </thead>
         <tbody></tbody>
