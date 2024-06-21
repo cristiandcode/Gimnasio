@@ -38,7 +38,9 @@ function App() {
           path="/Login/"
           element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
         ></Route>
-        <Route exact path="/Registro/" element={<Registro></Registro>}></Route>
+ index
+        <Route exact path="/Registro/" element={<Registro></Registro>}></Route>{" "}
+        <Route exact path="/about" element={<AboutPage/>}/>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

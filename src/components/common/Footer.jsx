@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className="text-bg-dark">
       <Container>
         <Row>
-          <Col>
-            <h5>Ubicación</h5>
+          <Col md={3}>
+            <h5 className="my-2">Ubicación</h5>
             <a
               className="text-decoration-none text-white"
               href="https://maps.app.goo.gl/wzE5WrBza36ZH7bf7"
@@ -16,12 +16,12 @@ const Footer = () => {
               <br /> Tucumán
             </a>
           </Col>
-          <Col>
-            <h5>Telefono</h5>
+          <Col md={3}>
+            <h5 className="my-2">Telefono</h5>
             <p>0381 578-3030</p>
           </Col>
-          <Col>
-            <h5>Horarios</h5>
+          <Col md={3}>
+            <h5 className="my-2">Horarios</h5>
             <p>
               Lunes a Viernes:
               <br />
@@ -30,8 +30,8 @@ const Footer = () => {
               17-21hs.
             </p>
           </Col>
-          <Col>
-            <h5>Redes Sociales</h5>
+          <Col md={3}>
+            <h5 className="my-2">Redes Sociales</h5>
             <a
               className="text-decoration-none text-white"
               href="https://wa.me/5493815783030"
