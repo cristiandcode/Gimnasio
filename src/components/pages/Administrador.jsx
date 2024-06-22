@@ -18,7 +18,11 @@ const Administrador = () => {
       const datos = await respuesta.json();
       setClases(datos);
     } else {
-      Swal.fire("Ocurrio un error", "Intente mas tarde", "error");
+      Swal.fire({
+        title: "Ocurrio un error",
+        text: "Intente mas tarde",
+        icon: "error",
+      });
     }
   };
 

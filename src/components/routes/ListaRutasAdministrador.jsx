@@ -20,12 +20,12 @@ const ListaRutasAdministrador = () => {
       <Route
         exact
         path="/crearClases"
-        element={<FormularioClases></FormularioClases>}
+        element={<FormularioClases creando={true}></FormularioClases>}
       ></Route>
       <Route
         exact
         path="/editarClases"
-        element={<FormularioClases></FormularioClases>}
+        element={<FormularioClases creando={false}></FormularioClases>}
       ></Route>
     </Routes>
   );

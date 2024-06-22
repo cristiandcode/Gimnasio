@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
 import { Button, Container, Form } from "react-bootstrap";
+import { crearClase } from "../../helpers/queries.js";
+import Swal from "sweetalert2";
 
-const FormularioClases = () => {
+const FormularioClases = ({ creando }) => {
   const {
     register,
     handleSubmit,
@@ -10,8 +12,26 @@ const FormularioClases = () => {
     setValue,
   } = useForm();
 
-  const claseValidada = (clase) => {
+  const claseValidada = async (clase) => {
     console.log(clase);
+    if (creando === true) {
+      const respuesta = await crearClase(clase);
+      if (respuesta.status === 201) {
+        Swal.fire({
+          title: "Clase creada",
+          text: "La clase fue creada correctamente",
+          icon: "success",
+        });
+        reset();
+      } else {
+        Swal.fire({
+          title: "Ocurrio un error",
+          text: "La clase no pudo ser creada. Intenta nuevamente",
+          icon: "error",
+        });
+      }
+    } else {
+    }
   };
 
   return (
