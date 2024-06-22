@@ -3,7 +3,23 @@
     {
       "clase": "boxeo",
       "profesor": "cristian",
-      "horario": "15:30"
+      "fecha": "01/06/2024",
+      "horario": "15:30",
+      "id": "1"
+    },
+    {
+      "clase": "zumba",
+      "profesor": "claudia",
+      "fecha": "02/06/2024",
+      "horario": "9:45",
+      "id": "2"
+    },
+    {
+      "clase": "yoga",
+      "profesor": "iñaki",
+      "fecha": "03/06/2024",
+      "horario": "16:00",
+      "id": "3"
     }
   ]
 }

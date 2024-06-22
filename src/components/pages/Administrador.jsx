@@ -1,7 +1,26 @@
+import { useEffect, useState } from "react";
 import { Container, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Clases from "./paginasAdministrador/Clases";
+import { listarClases } from "../helpers/queries";
 
 const Administrador = () => {
+  const [clases, setClases] = useState([]);
+
+  useEffect(() => {
+    obtenerClases();
+  }, []);
+
+  const obtenerClases = async () => {
+    const respuesta = await listarClases();
+    if (respuesta.status === 200) {
+      const datos = await respuesta.json();
+      setClases(datos);
+    } else {
+      clases.map((itemClases) => <Clases key={itemClases.id}></Clases>);
+    }
+  };
+
   return (
     <Container className="mainSection">
       <h1 className="mt-5 text-center">
@@ -19,12 +38,16 @@ const Administrador = () => {
           <tr className="text-center">
             <th>Clase</th>
             <th>Profesor</th>
+            <th>Fecha</th>
             <th>Horario</th>
-            <th>Alumnos</th>
             <th>Opciones</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {clases.map((itemClase) => (
+            <Clases key={itemClase.id} clase={itemClase}></Clases>
+          ))}
+        </tbody>
       </Table>
     </Container>
   );

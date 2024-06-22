@@ -1,9 +1,9 @@
 
 const Clases = () => {
     return (
-        <div>
+        <tr>
             
-        </div>
+        </tr>
     );
 };
 
