@@ -3,6 +3,7 @@ import { Container, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Clases from "./paginasAdministrador/Clases";
 import { listarClases } from "../helpers/queries";
+import Swal from "sweetalert2";
 
 const Administrador = () => {
   const [clases, setClases] = useState([]);
@@ -17,7 +18,7 @@ const Administrador = () => {
       const datos = await respuesta.json();
       setClases(datos);
     } else {
-      clases.map((itemClases) => <Clases key={itemClases.id}></Clases>);
+      Swal.fire("Ocurrio un error", "Intente mas tarde", "error");
     }
   };
 
