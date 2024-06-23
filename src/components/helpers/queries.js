@@ -14,3 +14,27 @@ export const login = (usuario) => {
     return false;
   }
 };
+
+export const listarClases = async () => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases");
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const crearClase = async (claseNueva) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(claseNueva),
+    });
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+  }
+};
