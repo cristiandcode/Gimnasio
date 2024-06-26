@@ -4,6 +4,9 @@ const Error404 = () => {
     return (
         <section className='mainSection text-center'>
             <img src = {error} alt="error 404"/>
+            <div>
+                <Link className=''to="/">Volver al menú</Link>
+            </div>
         </section>
     );
 };
