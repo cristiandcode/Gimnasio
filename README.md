@@ -49,7 +49,7 @@
 | [![GitHub-badge]][GitHub-url]         | -       |
 | [![javaScript-badge]][javaScript-url] | -       |
 | [![Trello-badge]][Trello-url]         | -       |
-| [![REACT-badge]]                      | -       |
+| ![REACT-badge]          | -       |
 
 ## ✅Requisitos
 
@@ -139,3 +139,4 @@ codigo y documentacion copyright 2023-2024 de los autores de GYM. Destribuido ba
 [JavaScript-badge]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
 [JavaScript-url]: https://www.javascript.com/
 [REACT-badge]: https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB
+[REACT-URL]: https://react.dev
