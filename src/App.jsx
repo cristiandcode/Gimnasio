@@ -11,7 +11,7 @@ import Registro from "./components/pages/Registro";
 import { useState } from "react";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import ListaRutasAdministrador from "./components/routes/ListaRutasAdministrador";
-
+import Error404 from "./components/pages/Error404";
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
   const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
