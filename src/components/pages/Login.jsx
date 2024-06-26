@@ -13,7 +13,6 @@ const Login = ({ setUsuarioLogueado }) => {
   const navegacion = useNavigate();
 
   const onSubmit = (usuario) => {
-    console.log(usuario);
     if (login(usuario)) {
       Swal.fire(
         "¡Bienvenido a STK GYM!",

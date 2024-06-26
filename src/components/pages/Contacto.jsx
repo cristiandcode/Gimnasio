@@ -1,5 +1,6 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const Contacto = () => {
   const {
@@ -8,7 +9,22 @@ const Contacto = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (texto) => {};
+  const onSubmit = (mensaje) => {
+    console.log(mensaje);
+    if (mensaje) {
+      Swal.fire({
+        title: "Mensaje enviado",
+        text: "El mensaje fue enviado correctamente",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Ocurrio un error",
+        text: "El mensaje no pudo ser enviado. Intenta nuevamente",
+        icon: "error",
+      });
+    }
+  };
 
   return (
     <Container className="mainSection">
