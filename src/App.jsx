@@ -5,12 +5,12 @@ import Footer from "./components/common/Footer";
 import Menu from "./components/common/Menu";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Inicio from "./components/pages/Inicio";
-import Administrador from "./components/pages/Administrador";
 import Login from "./components/pages/Login";
 import Registro from "./components/pages/Registro";
 import { useState } from "react";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import ListaRutasAdministrador from "./components/routes/ListaRutasAdministrador";
+import Contacto from "./components/pages/Contacto";
 
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
@@ -38,8 +38,8 @@ function App() {
           path="/Login/"
           element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
         ></Route>
- index
         <Route exact path="/Registro/" element={<Registro></Registro>}></Route>{" "}
+        <Route exact path="/Contacto/" element={<Contacto></Contacto>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

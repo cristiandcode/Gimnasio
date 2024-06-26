@@ -39,7 +39,7 @@ const Login = ({ setUsuarioLogueado }) => {
           <Form.Label>Correo electronico:</Form.Label>
           <Form.Control
             type="email"
-            placeholder="claudia@mail.com"
+            placeholder="Ej: claudia@mail.com"
             {...register("email", {
               required: "El correo es obligatorio",
               minLength: {
