@@ -44,17 +44,17 @@ const Login = ({ setUsuarioLogueado }) => {
               required: "El correo es obligatorio",
               minLength: {
                 value: 10,
-                message: "El email debe contener al menos 10 caracteres",
+                message: "El correo debe contener al menos 10 caracteres",
               },
               maxLength: {
                 value: 30,
-                message: "El email debe contener como máximo 30 caracteres",
+                message: "El correo debe contener como máximo 30 caracteres",
               },
               pattern: {
                 value:
                   /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
                 message:
-                  "El correo debe ser un email valido Ej: nombre@mail.com",
+                  "El correo debe ser un email valido Ej: claudia@mail.com",
               },
             })}
           />
