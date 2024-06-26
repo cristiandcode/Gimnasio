@@ -49,7 +49,7 @@
 | [![GitHub-badge]][GitHub-url]         | -       |
 | [![javaScript-badge]][javaScript-url] | -       |
 | [![Trello-badge]][Trello-url]         | -       |
-| [![REACT-badge]][React-url]           | -       |
+| [![REACT-badge]]                      | -       |
 
 ## ✅Requisitos
 
