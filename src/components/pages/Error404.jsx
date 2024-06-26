@@ -1,4 +1,5 @@
 import error from '../../assets/error404.png'
+import { Link } from 'react-router-dom';
 const Error404 = () => {
     return (
         <section className='mainSection text-center'>
