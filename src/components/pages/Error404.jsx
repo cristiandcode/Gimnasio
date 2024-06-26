@@ -5,7 +5,7 @@ const Error404 = () => {
         <section className='mainSection text-center'>
             <img src = {error} alt="error 404"/>
             <div>
-                <Link className=''to="/">Volver al menú</Link>
+                <Link className='btn btn-primary mb-5'to="/">Volver al menú</Link>
             </div>
         </section>
     );
