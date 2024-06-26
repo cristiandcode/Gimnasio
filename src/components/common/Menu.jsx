@@ -45,6 +45,9 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
                 </NavLink>
               </>
             )}
+            <NavLink end className="nav-link" to="/contacto">
+              Contacto
+            </NavLink>
             <NavDropdown
               title="Planes"
               id="basic-nav-dropdown"
@@ -68,9 +71,6 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
               <NavDropdown.Item>Aminoacidos</NavDropdown.Item>
               <NavDropdown.Item>Multivitaminicos</NavDropdown.Item>
             </NavDropdown>
-            <NavLink end className="nav-link" to="/about">
-              About us
-            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
