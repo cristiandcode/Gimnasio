@@ -2,9 +2,9 @@
 # Gimnasio
 <div align= "center">
     <a href=''>
-    <img src='.././/assets/logoReadme.jpg' alt='logo-gym' width='300'/>
+    <img src= "./src/assets/logoR.jpg">
     </a>
-    <h1>GYM</h1>
+    <h1>GYM SKT</h1>
     <p>
      Ubicado en el microcentro de Tucumán, nuestro gimnasio ofrece modernas instalaciones con equipos de última generación, planes de entrenamiento personalizados por entrenadores expertos, y una amplia selección de proteínas y suplementos nutricionales. Con un ambiente motivador y programas grupales, es el lugar ideal para alcanzar tus objetivos de fitness y bienestar. ¡Visítanos y transforma tu vida!
     <br>
@@ -35,7 +35,7 @@
 - [📋 Licencia](#licencia)
 
 ## 💻 Sobre GYM
-<img src="./img/nuestroLocal.jpg" />
+<img src="" />
 
 # Descripcion mas a fondo del proyecto
 
