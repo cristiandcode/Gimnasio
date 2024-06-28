@@ -45,6 +45,7 @@ const Administrador = () => {
             <th>Profesor</th>
             <th>Fecha</th>
             <th>Horario</th>
+            <th>URL de Imagen</th>
             <th>Opciones</th>
           </tr>
         </thead>
