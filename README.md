@@ -2,9 +2,9 @@
 # Gimnasio
 <div align= "center">
     <a href=''>
-    <img src='./assets/logo.jpg' alt='logo-gym' width='300' />
+    <img src= "./src/assets/logoR.jpg">
     </a>
-    <h1>GYM</h1>
+    <h1>GYM SKT</h1>
     <p>
      Ubicado en el microcentro de Tucumán, nuestro gimnasio ofrece modernas instalaciones con equipos de última generación, planes de entrenamiento personalizados por entrenadores expertos, y una amplia selección de proteínas y suplementos nutricionales. Con un ambiente motivador y programas grupales, es el lugar ideal para alcanzar tus objetivos de fitness y bienestar. ¡Visítanos y transforma tu vida!
     <br>
@@ -35,7 +35,7 @@
 - [📋 Licencia](#licencia)
 
 ## 💻 Sobre GYM
-<img src="./img/nuestroLocal.jpg" />
+<img src="" />
 
 # Descripcion mas a fondo del proyecto
 
@@ -49,7 +49,7 @@
 | [![GitHub-badge]][GitHub-url]         | -       |
 | [![javaScript-badge]][javaScript-url] | -       |
 | [![Trello-badge]][Trello-url]         | -       |
-| [![REACT-badge]][React-url]           | -       |
+| ![REACT-badge]          | -       |
 
 ## ✅Requisitos
 
@@ -139,3 +139,4 @@ codigo y documentacion copyright 2023-2024 de los autores de GYM. Destribuido ba
 [JavaScript-badge]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
 [JavaScript-url]: https://www.javascript.com/
 [REACT-badge]: https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB
+[REACT-URL]: https://react.dev
