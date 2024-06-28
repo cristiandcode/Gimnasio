@@ -38,11 +38,9 @@ function App() {
           path="/login"
           element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
         ></Route>
-        <Route
-          path="*"
-          element={<Error404></Error404>}
-        ></Route>
-        <Route exact path="/registro/" element={<Registro></Registro>}></Route>
+          index
+        <Route exact path="/Registro/" element={<Registro></Registro>}></Route>{" "}
+        <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
