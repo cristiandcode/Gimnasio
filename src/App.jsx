@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
         <Route
           exact
-          path="/administrador/*"
+          path="/administrador"
           element={
             <RutasProtegidas>
               <ListaRutasAdministrador></ListaRutasAdministrador>
@@ -35,15 +35,14 @@ function App() {
         ></Route>
         <Route
           exact
-          path="/Login/"
+          path="/login"
           element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
         ></Route>
         <Route
-          exact
           path="*"
           element={<Error404></Error404>}
         ></Route>
-        <Route exact path="/Registro/" element={<Registro></Registro>}></Route>
+        <Route exact path="/registro/" element={<Registro></Registro>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
