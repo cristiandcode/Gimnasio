@@ -34,7 +34,7 @@ const Musculacion = () => {
 
   return (
     <Container className="mainSection">
-      <h1 className="mt-5 text-center">Formulario de Suscripción</h1>
+      <h1 className="mt-5 text-center">Formulario de Suscripción al plan: Musculación</h1>
       <hr />
       <Form className="my-4" onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="formNombre">

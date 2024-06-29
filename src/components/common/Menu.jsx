@@ -56,7 +56,7 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
               onMouseLeave={() => setShowPlanes(false)}
             >
               <NavLink end className="nav-link ms-3" to="/musculacion">Musculación</NavLink>
-              <NavDropdown.Item>Clases</NavDropdown.Item>
+              <NavLink end className="nav-link ms-3" to="/clases">Clases</NavLink>
               <NavDropdown.Item>Full</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
