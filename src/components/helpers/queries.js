@@ -23,6 +23,15 @@ export const listarClases = async () => {
     console.error(error);
   }
 };
+//Get editar
+export const obtenerClases = async (id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases"+id);
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+  }
+};
 
 export const crearClase = async (claseNueva) => {
   try {

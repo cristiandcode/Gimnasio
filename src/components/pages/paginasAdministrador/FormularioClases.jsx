@@ -1,7 +1,10 @@
 import { useForm } from "react-hook-form";
 import { Button, Container, Form } from "react-bootstrap";
-import { crearClase } from "../../helpers/queries.js";
+import { crearClase, obtenerClases } from "../../helpers/queries.js";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+
 
 const FormularioClases = ({ creando }) => {
   const {
@@ -11,6 +14,20 @@ const FormularioClases = ({ creando }) => {
     reset,
     setValue,
   } = useForm();
+  useEffect(() => {
+    //verificar si estoy editando
+    if (creando === false) {
+     cargarClases
+    }
+  }, []);
+  const cargarClases = async () =>{
+    const respuesta = await obtenerClases(id);
+    if(respuesta.status === 200){
+      const clases = await respuesta.json()
+      setValue("clase",clases.clase)
+      
+    }
+  }
 
   const claseValidada = async (clase) => {
     if (creando === true) {
