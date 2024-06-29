@@ -13,14 +13,14 @@ const Musculacion = () => {
   const onSubmit = (usuario) => {
     if (usuario) {
       Swal.fire({
-        title: "Suscripción enviada",
-        text: "Pronto nos comunicaremos para brindarle mas información",
+        title: "Formulario enviado",
+        text: "Pronto nos pondremos en contacto para brindarle mas información",
         icon: "success",
       });
     } else {
       Swal.fire({
-        title: "Ocurrio un error",
-        text: "No se pudo enviar tu suscripción. Intenta nuevamente",
+        title: "Error",
+        text: "El formulario no pudo ser enviado. Intenta nuevamente",
         icon: "error",
       });
     }
@@ -34,7 +34,9 @@ const Musculacion = () => {
 
   return (
     <Container className="mainSection">
-      <h1 className="mt-5 text-center">Formulario de Suscripción al plan: Musculación</h1>
+      <h1 className="mt-5 text-center">
+        Formulario de Suscripción al plan: Musculación
+      </h1>
       <hr />
       <Form className="my-4" onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="formNombre">
