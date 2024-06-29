@@ -15,8 +15,9 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Container className="bgClaro textoMorado">
+      <Navbar expand="lg">
+        {/* bg-body-tertiary */}
         <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="logo gym" className="img-fluid" width={130} />
         </Navbar.Brand>
@@ -55,9 +56,15 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
               onMouseEnter={() => setShowPlanes(true)}
               onMouseLeave={() => setShowPlanes(false)}
             >
-              <NavDropdown.Item>Musculación</NavDropdown.Item>
-              <NavDropdown.Item>Clases</NavDropdown.Item>
-              <NavDropdown.Item>Full</NavDropdown.Item>
+              <NavLink end className="nav-link ms-3" to="/musculacion">
+                Musculación
+              </NavLink>
+              <NavLink end className="nav-link ms-3" to="/clases">
+                Clases
+              </NavLink>
+              <NavLink end className="nav-link ms-3" to="/full">
+                Full
+              </NavLink>
             </NavDropdown>
             <NavDropdown
               title="Suplementos"
@@ -73,8 +80,8 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>{" "}
+    </Container>
   );
 };
 

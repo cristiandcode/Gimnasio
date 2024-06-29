@@ -11,6 +11,10 @@ import { useState } from "react";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import ListaRutasAdministrador from "./components/routes/ListaRutasAdministrador";
 import Contacto from "./components/pages/Contacto";
+import Error404 from "./components/pages/Error404";
+import Musculacion from "./components/pages/paginasPlanes/Musculacion";
+import PlanClases from "./components/pages/paginasPlanes/PlanClases";
+import Full from "./components/pages/paginasPlanes/Full";
 
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
@@ -40,6 +44,10 @@ function App() {
         ></Route>
         <Route exact path="/Registro/" element={<Registro></Registro>}></Route>{" "}
         <Route exact path="/Contacto/" element={<Contacto></Contacto>}></Route>
+        <Route exact path="/Musculacion/" element={<Musculacion></Musculacion>}></Route>
+        <Route exact path="/Clases/" element={<PlanClases></PlanClases>}></Route>
+        <Route exact path="/Full/" element={<Full></Full>}></Route>
+        <Route exact path="*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
