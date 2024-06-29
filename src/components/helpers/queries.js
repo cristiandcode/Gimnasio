@@ -38,3 +38,15 @@ export const crearClase = async (claseNueva) => {
     console.error(error);
   }
 };
+//Borrar Clase
+
+export const eliminarClases= async (id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases/"+id,{
+        method: "DELETE"
+    });
+    return respuesta
+  } catch (error) {
+    console.error(error);
+  }
+}

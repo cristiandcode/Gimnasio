@@ -13,7 +13,6 @@ const FormularioClases = ({ creando }) => {
   } = useForm();
 
   const claseValidada = async (clase) => {
-    console.log(clase);
     if (creando === true) {
       const respuesta = await crearClase(clase);
       if (respuesta.status === 201) {

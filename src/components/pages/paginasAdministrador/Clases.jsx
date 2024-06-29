@@ -1,6 +1,38 @@
 import { Button, Container } from "react-bootstrap";
-
-const Clases = ({ clase }) => {
+import Swal from "sweetalert2";
+import { eliminarClases, listarClases } from "../../helpers/queries";
+const Clases = ({ clase, setClases }) => {
+  const borrarClase = () => {
+    Swal.fire({
+      title: "¿Estas seguro de borrar el producto?",
+      text: "No se puede revertir este paso",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Borrar",
+      cancelButtonText: "Cancelar",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        
+          //actualizar tabla
+          //pedir los datos actualizados a la api
+          const respuestaListaProductos = await listarClases();
+          if (respuestaListaProductos.status === 200) {
+            const datosActualizados = await respuestaListaProductos.json();
+            //actualizar el state de productos
+            setClases(datosActualizados);
+          }
+        } else {
+          Swal.fire({
+            title: "Error al eliminar la clase",
+            text: "La clase x no pudo ser eliminada",
+            icon: "error",
+          });
+        }
+      }
+    });
+  };
   return (
     <tr>
       <td className="text-center">{clase.clase}</td>
@@ -12,7 +44,7 @@ const Clases = ({ clase }) => {
           <i className="bi bi-pencil-square"></i>
         </Button>
         <Button variant="danger">
-          <i className="bi bi-trash"></i>
+          <i className="bi bi-trash" onClick={borrarClase}></i>
         </Button>
       </td>
     </tr>
