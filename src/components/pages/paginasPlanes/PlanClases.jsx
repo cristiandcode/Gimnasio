@@ -73,8 +73,8 @@ const PlanClases = () => {
         <Form.Group className="mb-3" controlId="formClase">
           <Form.Label>Clases*</Form.Label>
           <Form.Select
-            {...register("categoria", {
-              required: "La categoria es obligatoria",
+            {...register("clases", {
+              required: "Las clases son obligatorias",
             })}
           >
             <option value="">Seleccione una opcion</option>
