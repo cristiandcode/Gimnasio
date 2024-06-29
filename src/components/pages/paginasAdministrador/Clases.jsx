@@ -48,7 +48,7 @@ const Clases = ({ clase, setClases }) => {
       <td className="text-center">{clase.fecha}</td>
       <td className="text-center">{clase.horario}</td>
       <td className="text-center">
-        <Link className="me-lg-2 btn btn-warning">
+        <Link className="me-lg-2 btn btn-warning" to={'/administrador/editar'+clase.id}>
           <i className="bi bi-pencil-square"></i>
         </Link>
         <Button variant="danger">
