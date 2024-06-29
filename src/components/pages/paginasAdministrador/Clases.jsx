@@ -24,12 +24,12 @@ const Clases = ({ clase, setClases }) => {
           });
           //actualizar tabla
           //pedir los datos actualizados a la api
-          const respuestaListaProductos = await listarClases();
-          if (respuestaListaProductos.status === 200) {
-            const datosActualizados = await respuestaListaProductos.json();
+          const respuestaListaClases = await listarClases();
+          if (respuestaListaClases.status === 200) {
+            const datosActualizados = await respuestaListaClases.json();
             //actualizar el state de productos
             setClases(datosActualizados);
-          }
+          }   
         } else {
           Swal.fire({
             title: "Error al eliminar la clase",
