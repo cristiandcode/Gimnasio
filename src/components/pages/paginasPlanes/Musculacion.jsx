@@ -13,8 +13,8 @@ const Musculacion = () => {
   const onSubmit = (usuario) => {
     if (usuario) {
       Swal.fire({
-        title: "Enviado",
-        text: "Tu suscripción fue enviada correctamente, pronto nos comunicaremos",
+        title: "Suscripción enviada",
+        text: "Pronto nos comunicaremos para brindarle mas información",
         icon: "success",
       });
     } else {
@@ -153,6 +153,52 @@ const Musculacion = () => {
             </Form.Text>
           </Form.Group>
         )}
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Correo electronico*</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Ej: claudia@mail.com"
+            {...register("email", {
+              required: "El correo es obligatorio",
+              minLength: {
+                value: 10,
+                message: "El correo debe contener al menos 10 caracteres",
+              },
+              maxLength: {
+                value: 30,
+                message: "El correo debe contener como máximo 30 caracteres",
+              },
+              pattern: {
+                value:
+                  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
+                message:
+                  "El correo debe ser un email valido Ej: claudia@mail.com",
+              },
+            })}
+          />
+          <Form.Text className="text-danger">{errors.email?.message}</Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formTelefono">
+          <Form.Label>Telefono*</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ej: 3815998877"
+            {...register("telefono", {
+              required: "El telefono es obligatorio",
+              minLength: {
+                value: 10,
+                message: "El telefono debe contener al menos 10 caracteres",
+              },
+              maxLength: {
+                value: 20,
+                message: "El telefono debe contener como máximo 20 caracteres",
+              },
+            })}
+          />
+          <Form.Text className="text-danger">
+            {errors.telefono?.message}
+          </Form.Text>
+        </Form.Group>
         <Button type="submit" variant="dark">
           Guardar
         </Button>
