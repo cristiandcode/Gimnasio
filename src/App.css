@@ -6,3 +6,6 @@
 .mainSection {
   flex-grow: 1;
 }
+.img-error{
+  width: 45vh;
+}
