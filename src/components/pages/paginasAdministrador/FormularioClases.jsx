@@ -25,7 +25,9 @@ const FormularioClases = ({ creando }) => {
     if(respuesta.status === 200){
       const clases = await respuesta.json()
       setValue("clase",clases.clase)
-      
+      setValue("clase",clases.profesor)
+      setValue("clase",clases.fecha)
+      setValue("clase",clases.horario)
     }
   }
 
