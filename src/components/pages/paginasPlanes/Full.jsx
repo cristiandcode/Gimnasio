@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const Full = () => {
   const {
@@ -10,7 +11,19 @@ const Full = () => {
   } = useForm();
 
   const onSubmit = (usuario) => {
-    console.log(usuario);
+    if (usuario) {
+      Swal.fire({
+        title: "Formulario enviado",
+        text: "Pronto nos pondremos en contacto para brindarle mas información",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: "El formulario no pudo ser enviado. Intenta nuevamente",
+        icon: "error",
+      });
+    }
   };
 
   const [seleccion, setSeleccion] = useState(false);
