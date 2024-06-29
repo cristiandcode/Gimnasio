@@ -14,7 +14,7 @@ const Clases = ({ clase, setClases }) => {
       cancelButtonText: "Cancelar",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        //pedirle a la api realizar el delete
+        //pedirle a la api realizar el borrar
         const respuesta = await eliminarClases(clase.id);
         if (respuesta.status === 200) {
           Swal.fire({
