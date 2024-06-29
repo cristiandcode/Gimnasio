@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const Musculacion = () => {
   const {
@@ -10,7 +11,19 @@ const Musculacion = () => {
   } = useForm();
 
   const onSubmit = (usuario) => {
-    console.log(usuario);
+    if (usuario) {
+      Swal.fire({
+        title: "Enviado",
+        text: "Tu suscripción fue enviada correctamente, pronto nos comunicaremos",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Ocurrio un error",
+        text: "No se pudo enviar tu suscripción. Intenta nuevamente",
+        icon: "error",
+      });
+    }
   };
 
   const [seleccion, setSeleccion] = useState(false);
