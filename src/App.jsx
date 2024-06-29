@@ -12,6 +12,7 @@ import { useState } from "react";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import ListaRutasAdministrador from "./components/routes/ListaRutasAdministrador";
 
+
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
   const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
@@ -38,7 +39,7 @@ function App() {
           path="/Login/"
           element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
         ></Route>
- index
+          index
         <Route exact path="/Registro/" element={<Registro></Registro>}></Route>{" "}
       </Routes>
       <Footer></Footer>

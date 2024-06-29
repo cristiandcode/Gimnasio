@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 const Clases = ({ clase }) => {
   return (
@@ -16,6 +16,7 @@ const Clases = ({ clase }) => {
         </Button>
       </td>
     </tr>
+    
   );
 };
 
