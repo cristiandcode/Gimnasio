@@ -1,5 +1,6 @@
 import { Button, Container, Form, FormSelect } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const PlanClases = () => {
   const {
@@ -9,7 +10,19 @@ const PlanClases = () => {
   } = useForm();
 
   const onSubmit = (usuario) => {
-    console.log(usuario);
+    if (usuario) {
+      Swal.fire({
+        title: "Formulario enviado",
+        text: "Pronto nos pondremos en contacto para brindarle mas información",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: "El formulario no pudo ser enviado. Intenta nuevamente",
+        icon: "error",
+      });
+    }
   };
 
   return (
@@ -59,21 +72,21 @@ const PlanClases = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formClase">
           <Form.Label>Clases*</Form.Label>
-        <Form.Select
-          {...register("categoria", {
-            required: "La categoria es obligatoria",
-          })}
-        >
-          <option value="">Seleccione una opcion</option>
-          <option value="Boxeo">Boxeo</option>
-          <option value="Zumba">Zumba</option>
-          <option value="Yoga">Yoga</option>
-          <option value="Spinning">Spinning</option>
-          <option value="Sandwich">Pilates</option>
-          <option value="Cardio">Cardio</option>
-          <option value="CrossFit">CrossFit</option>
-        </Form.Select>
-        <Form.Text className="text-danger">{errors.clase?.message}</Form.Text>
+          <Form.Select
+            {...register("categoria", {
+              required: "La categoria es obligatoria",
+            })}
+          >
+            <option value="">Seleccione una opcion</option>
+            <option value="Boxeo">Boxeo</option>
+            <option value="Zumba">Zumba</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Spinning">Spinning</option>
+            <option value="Sandwich">Pilates</option>
+            <option value="Cardio">Cardio</option>
+            <option value="CrossFit">CrossFit</option>
+          </Form.Select>
+          <Form.Text className="text-danger">{errors.clase?.message}</Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Correo electronico*</Form.Label>
