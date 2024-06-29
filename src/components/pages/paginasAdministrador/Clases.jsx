@@ -48,7 +48,7 @@ const Clases = ({ clase, setClases }) => {
       <td className="text-center">{clase.fecha}</td>
       <td className="text-center">{clase.horario}</td>
       <td className="text-center">
-        <Link variant="warning" className="me-2">
+        <Link className="me-lg-2 btn btn-warning">
           <i className="bi bi-pencil-square"></i>
         </Link>
         <Button variant="danger">
