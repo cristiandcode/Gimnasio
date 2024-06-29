@@ -14,7 +14,14 @@ const Clases = ({ clase, setClases }) => {
       cancelButtonText: "Cancelar",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        
+        //pedirle a la api realizar el delete
+        const respuesta = await eliminarClases(clase.id);
+        if (respuesta.status === 200) {
+          Swal.fire({
+            title: "Clase eliminada",
+            text: `La clase ${clase.nombreClase} fue eliminado correctamente`,
+            icon: "success",
+          });
           //actualizar tabla
           //pedir los datos actualizados a la api
           const respuestaListaProductos = await listarClases();
