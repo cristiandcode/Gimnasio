@@ -49,6 +49,9 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
             <NavLink end className="nav-link" to="/contacto">
               Contacto
             </NavLink>
+            <NavLink end className="nav-link" to="/nosotros">
+              Nosotros
+            </NavLink>
             <NavDropdown
               title="Planes"
               id="basic-nav-dropdown"
