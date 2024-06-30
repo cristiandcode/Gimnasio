@@ -56,7 +56,6 @@ const Musculacion = () => {
         Además, contarás con seguimiento constante para ajustar el entrenamiento
         según tus avances y metas.
       </h5>
-
       <hr />
       <h2 className="text-center textoMorado">Formulario de Suscripción</h2>
       <hr />
