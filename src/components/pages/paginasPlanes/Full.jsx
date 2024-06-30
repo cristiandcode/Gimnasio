@@ -35,10 +35,34 @@ const Full = () => {
   };
 
   return (
-    <Container className="mainSection">
-      <h1 className="mt-5 text-center textoMorado">
-        Formulario de Suscripción <br /> Plan Full
-      </h1>
+    <Container className="mainSection mt-5">
+      <h1 className="text-center textoMorado">PLAN: CLASES</h1>
+      <h5 className="text-center textoMorado mt-3">
+        Si buscas una experiencia completa, el plan Full es ideal para ti.
+        Incluye acceso a todas nuestras instalaciones: gimnasio, piscina, sauna
+        y más.
+      </h5>
+      <h5 className="text-center textoMorado">
+        Diseñaremos un programa de ejercicios personalizado según tus objetivos.
+        Además, recibirás asesoramiento nutricional detallado para optimizar tus
+        resultados.
+      </h5>
+      <h5 className="text-center textoMorado">
+        Con el plan Full, maximizarás tu potencial y disfrutarás de una vida
+        activa y saludable.
+      </h5>
+      <h5 className="text-center textoMorado">
+        Masajes y Spa: Como parte del plan Full, disfruta de masajes relajantes
+        y acceso al área de spa. Cuida tu cuerpo y mente después de tus
+        entrenamientos.
+      </h5>
+      <h5 className="text-center textoMorado">
+        Programa de Retos Mensuales: Cada mes, establecemos un nuevo desafío
+        (como correr una cierta distancia o hacer una cantidad específica de
+        flexiones). Los participantes pueden ganar premios y reconocimiento.
+      </h5>
+      <hr />
+      <h2 className="text-center textoMorado">Formulario de Suscripción</h2>
       <hr />
       <Row>
         <Col lg={6}>
