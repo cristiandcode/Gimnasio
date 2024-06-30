@@ -36,25 +36,11 @@
       "horario": "14:30"
     },
     {
-      "id": "b59f",
       "clase": "dfgdfgdgdg",
       "profesor": "gdgdgdf",
       "fecha": "28/07/2024",
-      "horario": "00:03"
-    },
-    {
-      "id": "97ed",
-      "clase": "saddad",
-      "profesor": "dsdsfds",
-      "fecha": "28/07/2024",
-      "horario": "11:44"
-    },
-    {
-      "id": "74dd",
-      "clase": "saddad",
-      "profesor": "dsdsfds",
-      "fecha": "28/07/2024",
-      "horario": "11:44"
+      "horario": "00:30",
+      "id": "b59f"
     }
   ]
 }
