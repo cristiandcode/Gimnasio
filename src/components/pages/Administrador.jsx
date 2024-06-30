@@ -50,7 +50,11 @@ const Administrador = () => {
         </thead>
         <tbody>
           {clases.map((itemClase) => (
-            <Clases key={itemClase.id} clase={itemClase}></Clases>
+            <Clases
+              key={itemClase.id}
+              clase={itemClase}
+              setClases={setClases}
+            ></Clases>
           ))}
         </tbody>
       </Table>
