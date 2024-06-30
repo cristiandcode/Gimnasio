@@ -39,8 +39,8 @@ const Full = () => {
       <h1 className="text-center textoMorado">PLAN: CLASES</h1>
       <h5 className="text-center textoMorado mt-3">
         Si buscas una experiencia completa, el plan Full es ideal para ti.
-        Incluye acceso a todas nuestras instalaciones: gimnasio, piscina, sauna
-        y más.
+        Incluye acceso a todas nuestras instalaciones, clases y programas
+        especiales.
       </h5>
       <h5 className="text-center textoMorado">
         Diseñaremos un programa de ejercicios personalizado según tus objetivos.
@@ -52,14 +52,8 @@ const Full = () => {
         activa y saludable.
       </h5>
       <h5 className="text-center textoMorado">
-        Masajes y Spa: Como parte del plan Full, disfruta de masajes relajantes
-        y acceso al área de spa. Cuida tu cuerpo y mente después de tus
-        entrenamientos.
-      </h5>
-      <h5 className="text-center textoMorado">
-        Programa de Retos Mensuales: Cada mes, establecemos un nuevo desafío
-        (como correr una cierta distancia o hacer una cantidad específica de
-        flexiones). Los participantes pueden ganar premios y reconocimiento.
+        Cada mes, establecemos un nuevo desafío . Los participantes pueden ganar
+        premios y reconocimiento.
       </h5>
       <hr />
       <h2 className="text-center textoMorado">Formulario de Suscripción</h2>
