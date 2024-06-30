@@ -59,3 +59,18 @@ export const eliminarClases= async (id) => {
     console.error(error);
   }
 }
+// Editar clase actualizada PUT
+export const editarClase = async (claseActualizada, id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases/"+id,{
+        method: "PUT",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(claseActualizada)
+    });
+    return respuesta
+  } catch (error) {
+    console.error(error);
+  }
+};
