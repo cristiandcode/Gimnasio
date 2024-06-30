@@ -19,7 +19,7 @@ const FormularioClases = ({ creando }) => {
   useEffect(() => {
     //verificar si estoy editando
     if (creando === false) {
-     cargarClases
+     cargarClases()
     }
   }, []);
   const cargarClases = async () =>{

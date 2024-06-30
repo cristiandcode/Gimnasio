@@ -26,7 +26,7 @@ export const listarClases = async () => {
 //Get editar
 export const obtenerClases = async (id) => {
   try {
-    const respuesta = await fetch("http://localhost:3000/clases"+id);
+    const respuesta = await fetch(`http://localhost:3000/clases"+${id}`);
     return respuesta;
   } catch (error) {
     console.error(error);
