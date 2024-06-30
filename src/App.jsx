@@ -30,7 +30,7 @@ function App() {
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
         <Route
           exact
-          path="/administrador"
+          path="/administrador/*"
           element={
             <RutasProtegidas>
               <ListaRutasAdministrador></ListaRutasAdministrador>
