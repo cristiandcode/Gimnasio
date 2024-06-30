@@ -5,6 +5,7 @@
       "profesor": "cristian",
       "fecha": "01/06/2024",
       "horario": "15:30",
+      "usuarios":"Fernanda, Rocio",
       "id": "1"
     },
     {
@@ -12,6 +13,7 @@
       "profesor": "claudia",
       "fecha": "02/06/2024",
       "horario": "9:45",
+      "usuarios":"Luis",
       "id": "2"
     },
     {
@@ -19,6 +21,7 @@
       "profesor": "iñaki",
       "fecha": "03/06/2024",
       "horario": "16:00",
+      "usuarios":"Armando, Maria",
       "id": "3"
     },
     {
@@ -26,7 +29,9 @@
       "clase": "baile",
       "profesor": "luciano",
       "fecha": "28/07/2024",
-      "horario": "04:30"
+      "horario": "04:30",
+      "usuarios":"Angel, Lourdes, Maxi"
+
     },
     {
       "id": "b30b",

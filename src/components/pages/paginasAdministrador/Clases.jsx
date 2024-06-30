@@ -7,6 +7,7 @@ const Clases = ({ clase }) => {
       <td className="text-center">{clase.profesor}</td>
       <td className="text-center">{clase.fecha}</td>
       <td className="text-center">{clase.horario}</td>
+      <td className="text-center">{clase.usuarios}</td>
       <td className="text-center">
         <Button variant="warning" className="me-2">
           <i className="bi bi-pencil-square"></i>
