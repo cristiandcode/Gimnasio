@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import cristian from "../../assets/cristian.jpg";
 import claudia from "../../assets/claudia.jpg";
+import iñaki from "../../assets/iñaki.jpg";
 
 const Nosotros = () => {
   return (
@@ -56,23 +57,32 @@ const Nosotros = () => {
       </h2>
       <h2 className="mt-4 textoMorado text-center">Conocé nuestro equipo: </h2>
       <Row className="my-5 text-center">
-        <Col lg={6}>
+        <Col lg={4}>
           <img
             src={claudia}
             alt="claudia"
             className="img-fluid imgNosotros"
-            width={360}
+            width={300}
           />
           <h2 className="mt-3 textoMorado">Claudia Torres</h2>
         </Col>
-        <Col lg={6}>
+        <Col lg={4}>
           <img
             src={cristian}
             alt="cristian"
             className="img-fluid imgNosotros"
-            width={360}
+            width={300}
           />
           <h2 className="mt-3 textoMorado">Cristian Diaz</h2>
+        </Col>
+        <Col lg={4}>
+          <img
+            src={iñaki}
+            alt="iñaki"
+            className="img-fluid imgNosotros"
+            width={300}
+          />
+          <h2 className="mt-3 textoMorado">Iñaki Zavaleta</h2>
         </Col>
       </Row>
     </Container>
