@@ -149,7 +149,7 @@ const PlanClases = () => {
                 {errors.telefono?.message}
               </Form.Text>
             </Form.Group>
-            <Button type="submit" variant="dark">
+            <Button type="submit" variant="light">
               Guardar
             </Button>
           </Form>
