@@ -35,7 +35,7 @@ const Musculacion = () => {
   };
 
   return (
-    <Container className="mainSection">
+    <Container className="mainSection mt-5">
       <h1 className="text-center textoMorado">PLAN: MUSCULACIÓN</h1>
       <h5 className="text-center textoMorado mt-3">
         Este plan está diseñado para aquellos que desean desarrollar su masa
@@ -53,7 +53,7 @@ const Musculacion = () => {
         necesidades individuales. Te ayudaremos a establecer objetivos realistas
         y a seguir un plan de alimentación que potencie tus resultados.
       </h5>
-      <h5 className="text-center textoMorado">
+      <h5 className="text-center textoMorado mb-5">
         Además, contarás con seguimiento constante para ajustar el entrenamiento
         según tus avances y metas.
       </h5>
