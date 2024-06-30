@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-
+import { Link } from "react-router-dom";
 const MainComponent = () => {
   return (
     <div>
@@ -55,6 +55,9 @@ const MainComponent = () => {
             <p>
 ¡Echa un vistazo a nuestra colaboración exclusiva con Planet Fitness! Nueva colección de ropa y productos deportivos Planet Fitness, solo y exclusivamente en STK GYM. Los productos son limitados, ¡así que actúa rápido!
             </p>
+            <Link className="btn" to={'/error404'}>
+            <p class="text-danger">-Ir a la tienda</p>
+        </Link>
           </div>
         </Col>
         }
@@ -93,9 +96,43 @@ const MainComponent = () => {
             <p>
             Tienda de suplementos dietarios con variedad de productos nacionales e importados. Los mejores precios del mercado. Asesoramiento personalizado para cumplir tus objetivos. Todo en nuestra tienda dentro de STK GYM!!
             </p>
+            <Link className="btn" to={'/error404'}>
+            <p class="text-danger">-Ir a la tienda</p>
+        </Link>
           </div>
         </Col>
         }
+      
+      </Row>
+    </Container>
+
+    <Container className='m-5'>
+      <Row>  
+        {/* Primera columna con texto */
+        <Col md={6}>
+          <div style={{ padding: '20px' }}>
+            <h2>¡¡LOS MEJORES PFS A TU DISPOSICIÓN!!</h2>
+            <br/>
+            <p>
+           La ayuda que buscas para mejorar tu rendimiento, la encontras con los mejores preparadores físicos de la ciudad en STK GYM!! Consultá los horarios disponibles de cada uno de nuestros PFS en la sede de nuestro GYM.
+            </p>
+            <Link className="btn" to={'/error404'}>
+            <p class="text-danger">-Buscar horarios</p>
+        </Link>
+          </div>
+        </Col>
+        }
+        {/* segunda columna con imagen */
+        <Col md={6}>
+          <Image
+            src="https://st2.depositphotos.com/1005730/6158/i/450/depositphotos_61589307-stock-photo-fitness-instructor-assisting-young-woman.jpg"
+            alt="preparador fisico"
+            fluid
+            className="rounded float-end"
+          />
+        </Col>
+        }
+        
       
       </Row>
     </Container>
