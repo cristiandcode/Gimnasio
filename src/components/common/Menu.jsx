@@ -15,8 +15,9 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Container className="bgClaro textoMorado">
+      <Navbar expand="lg">
+        {/* bg-body-tertiary */}
         <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="logo gym" className="img-fluid" width={130} />
         </Navbar.Brand>
@@ -40,7 +41,7 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
                 <NavLink end className="nav-link" to="/login">
                   Login
                 </NavLink>
-                <NavLink end className="nav-link" to="/registro">
+                <NavLink end className="nav-link" to="/error404">
                   Registro
                 </NavLink>
               </>
@@ -72,15 +73,23 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
               onMouseEnter={() => setShowSupplements(true)}
               onMouseLeave={() => setShowSupplements(false)}
             >
-              <NavDropdown.Item>Proteinas</NavDropdown.Item>
-              <NavDropdown.Item>Creatinas</NavDropdown.Item>
-              <NavDropdown.Item>Aminoacidos</NavDropdown.Item>
-              <NavDropdown.Item>Multivitaminicos</NavDropdown.Item>
+              <NavLink end className="nav-link" to="/error404">
+                Proteinas
+              </NavLink>
+              <NavLink end className="nav-link" to="/error404">
+                Creatinas
+              </NavLink>
+              <NavLink end className="nav-link" to="/error404">
+                Aminoacidos
+              </NavLink>
+              <NavLink end className="nav-link" to="/error404">
+                Multivitaminicos
+              </NavLink>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>{" "}
+    </Container>
   );
 };
 

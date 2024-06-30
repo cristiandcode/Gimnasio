@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="text-bg-dark">
+    <footer className="textoClaro bgMorado">
       <Container>
         <Row>
           <Col md={3}>
@@ -57,7 +57,7 @@ const Footer = () => {
               <i className="bi bi-twitter me-2 fs-4"></i>
             </a>
           </Col>
-        </Row>
+        </Row>{" "}
       </Container>
     </footer>
   );
