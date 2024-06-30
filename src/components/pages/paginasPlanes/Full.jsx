@@ -51,7 +51,7 @@ const Full = () => {
         Con el plan Full, maximizarás tu potencial y disfrutarás de una vida
         activa y saludable.
       </h5>
-      <h5 className="text-center textoMorado">
+      <h5 className="text-center textoMorado mb-5">
         Cada mes, establecemos un nuevo desafío . Los participantes pueden ganar
         premios y reconocimiento.
       </h5>
