@@ -53,7 +53,7 @@ const FormularioClases = ({ creando }) => {
      if(respuesta.status === 200){
       Swal.fire({
         title: "Clase editada",
-        text: "La clase fue creada correctamente",
+        text: "La clase fue editada correctamente",
         icon: "success",
       });
 
