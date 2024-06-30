@@ -109,6 +109,24 @@ const FormularioClases = ({ creando }) => {
               },
             })}
           />
+          <Form.Group className="mb-3" controlId="formUsuarios">
+            <Form.Label>Usuarios Inscriptos*</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Ej: claudia"
+              {...register("usuarios", {
+                required: "Los usuarios inscriptos son obligatorios",
+                minLength: {
+                  value: 3,
+                  message:
+                    "Debe ingresar como minimo 3 caracteres para los usuarios",
+                },
+              })}
+            />
+            <Form.Text className="text-danger">
+              {errors.clase?.message}
+            </Form.Text>
+          </Form.Group>
           <Form.Text className="text-danger">
             {errors.horario?.message}
           </Form.Text>
