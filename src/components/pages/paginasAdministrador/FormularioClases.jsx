@@ -1,7 +1,13 @@
 import { useForm } from "react-hook-form";
 import { Button, Container, Form } from "react-bootstrap";
-import { crearClase } from "../../helpers/queries.js";
+import {
+  crearClase,
+  editarClase,
+  obtenerClase,
+} from "../../helpers/queries.js";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const FormularioClases = ({ creando }) => {
   const {
@@ -11,6 +17,25 @@ const FormularioClases = ({ creando }) => {
     reset,
     setValue,
   } = useForm();
+  const { id } = useParams();
+  const navegacion = useNavigate();
+
+  useEffect(() => {
+    if (creando === false) {
+      cargarClase();
+    }
+  }, []);
+
+  const cargarClase = async () => {
+    const respuesta = await obtenerClase(id);
+    if (respuesta.status === 200) {
+      const clase = await respuesta.json();
+      setValue("clase", clase.clase);
+      setValue("profesor", clase.profesor);
+      setValue("fecha", clase.fecha);
+      setValue("horario", clase.horario);
+    }
+  };
 
   const claseValidada = async (clase) => {
     if (creando === true) {
@@ -30,6 +55,15 @@ const FormularioClases = ({ creando }) => {
         });
       }
     } else {
+      const respuesta = await editarClase(clase, id);
+      if (respuesta.status === 200) {
+        Swal.fire({
+          title: "Clase editada",
+          text: "La clase fue editada correctamente",
+          icon: "success",
+        });
+        navegacion("/administrador");
+      }
     }
   };
 

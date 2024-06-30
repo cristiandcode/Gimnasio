@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { eliminarClase, listarClases } from "../../helpers/queries";
+import { Link } from "react-router-dom";
 
 const Clases = ({ clase, setClases }) => {
   const borrarClase = () => {
@@ -45,9 +46,9 @@ const Clases = ({ clase, setClases }) => {
       <td className="text-center">{clase.fecha}</td>
       <td className="text-center">{clase.horario}</td>
       <td className="text-center">
-        <Button variant="warning" className="me-2">
+        <Link className="me-lg-2 btn btn-warning" to={'/administrador/editarClases/'+ clase.id}>
           <i className="bi bi-pencil-square"></i>
-        </Button>
+        </Link>
         <Button variant="danger">
           <i className="bi bi-trash" onClick={borrarClase}></i>
         </Button>
