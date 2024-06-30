@@ -38,7 +38,7 @@ const Login = ({ setUsuarioLogueado }) => {
       <h2 className="mb-4 textoMorado text-center">Inicio de sesión</h2>
       <Row>
         <Col className="text-center" lg={4}>
-          <img src={login1} alt="logo gym" className="img-fluid" width={240} />
+          <img src={login1} alt="persona levantando una barra con pesas" className="img-fluid" width={240} />
         </Col>
         <Col lg={4}>
           <Form
@@ -107,7 +107,7 @@ const Login = ({ setUsuarioLogueado }) => {
         <Col className="text-center" lg={4}>
           <img
             src={login2}
-            alt="logo gym"
+            alt="mujer posando mostrando los biceps"
             className="img-fluid"
             width={240}
           />
