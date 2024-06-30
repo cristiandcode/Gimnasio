@@ -14,7 +14,7 @@ const FormularioClases = ({ creando }) => {
     reset,
     setValue,
   } = useForm();
-  const { id } =useParams();
+  const { id } = useParams();
  const navegacion useNavigate()
   useEffect(() => {
     //verificar si estoy editando
