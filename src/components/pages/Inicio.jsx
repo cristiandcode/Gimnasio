@@ -1,8 +1,10 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
-const CarouselComponent = () => {
+const MainComponent = () => {
   return (
+    <div>
     <Carousel>
       <Carousel.Item>
         <img
@@ -41,7 +43,66 @@ const CarouselComponent = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
+
+    <Container className='m-5'>
+      <Row>
+        {/* Primera columna con texto */
+        <Col md={6}>
+          <div style={{ padding: '20px' }}>
+            <h2>¡¡CONOCÉ NUESTRA TIENDA DE ROPA!!</h2>
+            <br/>
+            <p>
+¡Echa un vistazo a nuestra colaboración exclusiva con Planet Fitness! Nueva colección de ropa y productos deportivos Planet Fitness, solo y exclusivamente en STK GYM. Los productos son limitados, ¡así que actúa rápido!
+            </p>
+          </div>
+        </Col>
+        }
+        {/* Segunda columna con imagen */
+        <Col md={6}>
+          <Image
+            src="https://images.ctfassets.net/nhduxlsunsu5/6qfFcaklsK0ZdsPHRFCn7u/bb36b04116cfafd76e81bc8347c3e8a1/PF_Web_CB_Store_copy.jpg"
+            alt="Ropa deportiva"
+            fluid
+            className="rounded float-end"
+          />
+        </Col>
+        }
+      </Row>
+    </Container>
+
+    
+    <Container className='m-5'>
+      <Row>  
+        
+        {/* Primera columna con imagen */
+        <Col md={6}>
+          <Image
+            src="https://qph.cf2.quoracdn.net/main-qimg-5bbe2f0b1623b70c7e44204c2e7bc668-lq"
+            alt="suplementos deportivos"
+            fluid
+            className="rounded float-end"
+          />
+        </Col>
+        }
+        {/* Segunda columna con texto */
+        <Col md={6}>
+          <div style={{ padding: '20px' }}>
+            <h2>¡¡AYUDA A TU CRECIMIENTO CON NUESTROS SUPLEMENTOS!!</h2>
+            <br/>
+            <p>
+            Tienda de suplementos dietarios con variedad de productos nacionales e importados. Los mejores precios del mercado. Asesoramiento personalizado para cumplir tus objetivos. Todo en nuestra tienda dentro de STK GYM!!
+            </p>
+          </div>
+        </Col>
+        }
+      
+      </Row>
+    </Container>
+    </div>
   );
 };
 
-export default CarouselComponent;
+
+export default MainComponent;
+
