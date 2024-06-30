@@ -3,7 +3,7 @@ import { Button, Container, Form } from "react-bootstrap";
 import { crearClase, editarClase ,obtenerClases } from "../../helpers/queries.js";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 
 const FormularioClases = ({ creando }) => {
@@ -14,6 +14,8 @@ const FormularioClases = ({ creando }) => {
     reset,
     setValue,
   } = useForm();
+  const { id } =useParams();
+ const navegacion useNavigate()
   useEffect(() => {
     //verificar si estoy editando
     if (creando === false) {
@@ -56,6 +58,8 @@ const FormularioClases = ({ creando }) => {
         text: "La clase fue editada correctamente",
         icon: "success",
       });
+      //redireccionar al navegador}
+      navegacion('/administrador')
 
      }
     }
