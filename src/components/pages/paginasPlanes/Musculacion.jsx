@@ -36,9 +36,30 @@ const Musculacion = () => {
 
   return (
     <Container className="mainSection">
-      <h1 className="mt-5 text-center textoMorado">
-        Formulario de Suscripción <br /> Plan Musculación
-      </h1>
+      <h1 className="text-center textoMorado">PLAN: MUSCULACIÓN</h1>
+      <h5 className="text-center textoMorado mt-3">
+        Este plan está diseñado para aquellos que desean desarrollar su masa
+        muscular de manera efectiva y segura. Nuestro enfoque se centra en la
+        hipertrofia, utilizando ejercicios de fuerza específicos.
+        <br />
+      </h5>
+      <h5 className="text-center textoMorado">
+        Recomendamos suplementos como proteínas en polvo o creatina para
+        potenciar tus resultados. Nuestros especialistas te guiarán en su uso
+        adecuado.
+      </h5>
+      <h5 className="text-center textoMorado">
+        El asesoramiento personalizado es clave para adaptar el programa a tus
+        necesidades individuales. Te ayudaremos a establecer objetivos realistas
+        y a seguir un plan de alimentación que potencie tus resultados.
+      </h5>
+      <h5 className="text-center textoMorado">
+        Además, contarás con seguimiento constante para ajustar el entrenamiento
+        según tus avances y metas.
+      </h5>
+
+      <hr />
+      <h2 className="text-center textoMorado">Formulario de Suscripción</h2>
       <hr />
       <Row>
         <Col lg={6}>
