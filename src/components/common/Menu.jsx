@@ -15,8 +15,9 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Container className="bgClaro textoMorado">
+      <Navbar expand="lg">
+        {/* bg-body-tertiary */}
         <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="logo gym" className="img-fluid" width={130} />
         </Navbar.Brand>
@@ -79,8 +80,8 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>{" "}
+    </Container>
   );
 };
 
