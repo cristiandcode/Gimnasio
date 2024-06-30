@@ -41,7 +41,6 @@ const Musculacion = () => {
         Este plan está diseñado para aquellos que desean desarrollar su masa
         muscular de manera efectiva y segura. Nuestro enfoque se centra en la
         hipertrofia, utilizando ejercicios de fuerza específicos.
-        <br />
       </h5>
       <h5 className="text-center textoMorado">
         Recomendamos suplementos como proteínas en polvo o creatina para
