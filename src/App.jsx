@@ -14,6 +14,7 @@ import Error404 from "./components/pages/Error404";
 import Musculacion from "./components/pages/paginasPlanes/Musculacion";
 import PlanClases from "./components/pages/paginasPlanes/PlanClases";
 import Full from "./components/pages/paginasPlanes/Full";
+import Nosotros from "./components/pages/Nosotros";
 
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
@@ -43,6 +44,7 @@ function App() {
         ></Route>
         <Route exact path="/Registro/" element={<Error404></Error404>}></Route>{" "}
         <Route exact path="/Contacto/" element={<Contacto></Contacto>}></Route>
+        <Route exact path="/Nosotros/" element={<Nosotros></Nosotros>}></Route>
         <Route
           exact
           path="/Musculacion/"
