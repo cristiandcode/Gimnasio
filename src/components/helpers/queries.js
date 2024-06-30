@@ -49,7 +49,7 @@ export const crearClase = async (claseNueva) => {
 };
 //Borrar Clase
 
-export const eliminarClases= async (id) => {
+export const eliminarClases = async (id) => {
   try {
     const respuesta = await fetch("http://localhost:3000/clases/"+id,{
         method: "DELETE"

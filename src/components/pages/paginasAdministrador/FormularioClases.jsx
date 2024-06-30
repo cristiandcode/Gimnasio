@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Button, Container, Form } from "react-bootstrap";
-import { crearClase, obtenerClases } from "../../helpers/queries.js";
+import { crearClase, editarClase ,obtenerClases } from "../../helpers/queries.js";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -49,6 +49,15 @@ const FormularioClases = ({ creando }) => {
         });
       }
     } else {
+     const respuesta = await editarClase (clase, id)
+     if(respuesta.status === 200){
+      Swal.fire({
+        title: "Clase editada",
+        text: "La clase fue creada correctamente",
+        icon: "success",
+      });
+
+     }
     }
   };
 
