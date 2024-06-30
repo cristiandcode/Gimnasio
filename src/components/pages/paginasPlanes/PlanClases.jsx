@@ -32,8 +32,8 @@ const PlanClases = () => {
       <h1 className="text-center textoMorado">PLAN: CLASES</h1>
       <h5 className="text-center textoMorado mt-3">
         ¿Te gusta la variedad? Nuestro plan de clases te ofrece acceso a una
-        amplia gama de disciplinas: desde zumba hasta boxeo, pasando por
-        spinning y yoga.
+        amplia gama de disciplinas como zumba, boxeo, spinning, yoga y mucho
+        más.
       </h5>
       <h5 className="text-center textoMorado mt-3">
         Cada clase está diseñada para mantener la motivación alta y trabajar
@@ -41,13 +41,13 @@ const PlanClases = () => {
         mientras te pones en forma!
       </h5>
       <h5 className="text-center textoMorado mt-3">
-        Clases Temáticas Especiales: Organizamos eventos temáticos, como “Día de
-        la Zumba” o “Semana de Boxeo”. Estas clases especiales agregan diversión
-        y comunidad a tu rutina.
+        Organizamos eventos temáticos, como “Día de la Zumba” o “Semana de
+        Boxeo”. Estas clases especiales agregan diversión y comunidad a tu
+        rutina.
       </h5>
       <h5 className="text-center textoMorado mt-3">
-        Acceso a Plataforma Virtual: Ofrecemos acceso a clases en línea para que
-        puedas seguir entrenando desde casa o cuando viajas.
+        Tambien ofrecemos acceso a clases en línea para que puedas seguir
+        entrenando desde casa o cuando viajas.
       </h5>
       <hr />
       <h2 className="text-center textoMorado">Formulario de Suscripción</h2>
