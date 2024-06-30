@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { login } from "../helpers/queries";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import login1 from "../../assets/login1.jpg";
+import login2 from "../../assets/login2.jpg";
 
 const Login = ({ setUsuarioLogueado }) => {
   const {
@@ -32,11 +34,17 @@ const Login = ({ setUsuarioLogueado }) => {
 
   return (
     <Container className="my-5 mainSection ">
+      <h1 className="textoMorado text-center">STK GYM</h1>
+      <h2 className="mb-4 textoMorado text-center">Inicio de sesión</h2>
       <Row>
-        <Col lg={4}></Col>
+        <Col className="text-center" lg={4}>
+          <img src={login1} alt="logo gym" className="img-fluid" width={240} />
+        </Col>
         <Col lg={4}>
-          <h1 className="mb-4">Inicio de sesión</h1>
-          <Form onSubmit={handleSubmit(onSubmit)}>
+          <Form
+            className="bgMorado textoClaro p-3 text-center"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Correo electronico*</Form.Label>
               <Form.Control
@@ -91,12 +99,19 @@ const Login = ({ setUsuarioLogueado }) => {
                 {errors.password?.message}
               </Form.Text>
             </Form.Group>
-            <Button variant="dark" type="submit">
+            <Button variant="light" type="submit">
               Ingresar
             </Button>
           </Form>
         </Col>
-        <Col lg={4}></Col>
+        <Col className="text-center" lg={4}>
+          <img
+            src={login2}
+            alt="logo gym"
+            className="img-fluid"
+            width={240}
+          />
+        </Col>
       </Row>
     </Container>
   );
