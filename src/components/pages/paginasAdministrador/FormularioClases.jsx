@@ -69,8 +69,8 @@ const FormularioClases = ({ creando }) => {
 
   return (
     <Container className="mainSection">
-      <h1 className="display-4 mt-5">Administrar Clases</h1>
-      <Form className="my-4" onSubmit={handleSubmit(claseValidada)}>
+      <h1 className="display-4 mt-5 textoMorado text-center">Administrar Clases</h1>
+      <Form className="my-4 bgMorado textoClaro p-5" onSubmit={handleSubmit(claseValidada)}>
         <Form.Group className="mb-3" controlId="formClase">
           <Form.Label>Clase*</Form.Label>
           <Form.Control
@@ -165,7 +165,7 @@ const FormularioClases = ({ creando }) => {
             {errors.horario?.message}
           </Form.Text>
         </Form.Group>
-        <Button type="submit" variant="dark">
+        <Button type="submit" variant="light">
           Guardar
         </Button>
       </Form>
