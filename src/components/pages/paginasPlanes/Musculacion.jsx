@@ -240,11 +240,11 @@ const Musculacion = () => {
             </Button>
           </Form>
         </Col>
-        <Col className="text-center" lg={6}>
+        <Col className="text-center d-none d-lg-block" lg={6}>
           <img
             src={logo}
             alt="logo gym"
-            className="img-fluid my-5"
+            className="img-fluid my-5 "
             width={200}
           />
           <h2 className="display-3 textoMorado">STK GYM</h2>

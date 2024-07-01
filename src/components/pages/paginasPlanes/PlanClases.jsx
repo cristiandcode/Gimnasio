@@ -173,7 +173,7 @@ const PlanClases = () => {
             </Button>
           </Form>
         </Col>
-        <Col className="text-center" lg={6}>
+        <Col className="text-center d-none d-lg-block" lg={6}>
           <h2 className="display-3 textoMorado mt-5">STK GYM</h2>
           <img
             src={clases}

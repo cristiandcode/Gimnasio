@@ -6,7 +6,7 @@ import iñaki from "../../assets/iñaki.jpg";
 const Nosotros = () => {
   return (
     <Container className="mainSection">
-      <h1 className="text-center textoMorado">
+      <h1 className="text-center textoMorado mt-5">
         Bienvenido a STK GYM:
         <br /> Tu Espacio de Transformación
       </h1>
@@ -57,7 +57,7 @@ const Nosotros = () => {
       </h2>
       <h2 className="mt-4 textoMorado text-center">Conocé nuestro equipo: </h2>
       <Row className="my-5 text-center">
-        <Col lg={4}>
+        <Col lg={4} md={6}>
           <img
             src={claudia}
             alt="claudia"
@@ -66,7 +66,7 @@ const Nosotros = () => {
           />
           <h2 className="mt-3 textoMorado">Claudia Torres</h2>
         </Col>
-        <Col lg={4}>
+        <Col lg={4} md={6}>
           <img
             src={cristian}
             alt="cristian"
@@ -79,7 +79,7 @@ const Nosotros = () => {
           <img
             src={iñaki}
             alt="iñaki"
-            className="img-fluid imgNosotros"
+            className="img-fluid imgNosotros mt-md-5 mt-lg-0"
             width={300}
           />
           <h2 className="mt-3 textoMorado">Iñaki Zavaleta</h2>
