@@ -51,7 +51,7 @@ const Login = ({ setUsuarioLogueado }) => {
       <h1 className="textoMorado text-center">STK GYM</h1>
       <h2 className="mb-4 textoMorado text-center">Inicio de sesión</h2>
       <Row>
-        <Col className="text-center" lg={4}>
+        <Col className="text-center d-none d-lg-block" lg={4}>
           <img
             src={login1}
             alt="persona levantando una barra con pesas"
@@ -127,7 +127,7 @@ const Login = ({ setUsuarioLogueado }) => {
           <img
             src={login2}
             alt="mujer posando mostrando los biceps"
-            className="img-fluid"
+            className="img-fluid mt-5 mt-lg-0" 
             width={240}
           />
         </Col>
