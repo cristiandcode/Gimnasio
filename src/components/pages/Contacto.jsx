@@ -32,7 +32,7 @@ const Contacto = () => {
       <h1 className="display-4 mt-5 textoMorado text-center">Contacto</h1>
       <Row>
         <Col lg={6}>
-          <Form className="my-4 textoClaro bgMorado p-5" onSubmit={handleSubmit(onSubmit)}>
+          <Form className="my-4 textoClaro bgMorado p-3" onSubmit={handleSubmit(onSubmit)}>
             <Form.Group className="mb-3" controlId="formNombre">
               <Form.Label>Nombre:</Form.Label>
               <Form.Control
@@ -163,8 +163,8 @@ const Contacto = () => {
         <img
             src={contacto}
             alt="hombre entrenando con polea"
-            className="img-fluid m-5"
-            width={340}
+            className="img-fluid m-4 d-none d-lg-block"
+            width={322}
           /></Col>
       </Row>
     </Container>
