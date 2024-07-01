@@ -10,14 +10,13 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
 
   const logout = () => {
     localStorage.removeItem("usuarioGym");
-    setUsuarioLogueado("");
+    setUsuarioLogueado({});
     navegacion("/");
   };
 
   return (
     <Container className="bgClaro textoMorado">
       <Navbar expand="lg">
-        {/* bg-body-tertiary */}
         <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="logo gym" className="img-fluid" width={130} />
         </Navbar.Brand>
@@ -27,7 +26,7 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
             <NavLink end className="nav-link" to="/">
               Inicio
             </NavLink>
-            {usuarioLogueado.length > 0 ? (
+            {usuarioLogueado.length ? (
               <>
                 <NavLink end className="nav-link" to="/administrador">
                   Administrador

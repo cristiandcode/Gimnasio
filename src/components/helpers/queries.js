@@ -1,19 +1,19 @@
-const userAdministrador = {
-  email: "stkgym@mail.com",
-  password: "Stkgym2024",
-};
-
 const URIClases = import.meta.env.VITE_API;
+const URIUsuario = import.meta.env.VITE_API_USUARIO;
 
-export const login = (usuario) => {
-  if (
-    usuario.email === userAdministrador.email &&
-    usuario.password === userAdministrador.password
-  ) {
-    localStorage.setItem("usuarioGym", JSON.stringify(userAdministrador.email));
-    return true;
-  } else {
-    return false;
+export const login = async (usuario) => {
+  try {
+    const respuesta = await fetch(URIUsuario, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(usuario),
+    });
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+    return { error: "Error en el login" };
   }
 };
 

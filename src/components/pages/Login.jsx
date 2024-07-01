@@ -14,22 +14,30 @@ const Login = ({ setUsuarioLogueado }) => {
   } = useForm();
   const navegacion = useNavigate();
 
-  const onSubmit = (usuario) => {
-    if (login(usuario)) {
-      Swal.fire(
-        "¡Bienvenido a STK GYM!",
-        "Has iniciado sesión correctamente",
-        "success"
-      );
-      setUsuarioLogueado(usuario.email);
-      navegacion("/administrador");
-    } else {
-      Swal.fire(
-        "Error al iniciar sesión",
-        "Correo o contraseña incorrectos",
-        "error"
-      );
-    }
+  const onSubmit = async (usuario) => {
+    const respuesta = await login(usuario);
+    try {
+      if (respuesta.status === 200) {
+        Swal.fire(
+          "¡Bienvenido a STK GYM!",
+          "Has iniciado sesión correctamente",
+          "success"
+        );
+        const datos = await respuesta.json();
+        localStorage.setItem(
+          "usuarioGym",
+          JSON.stringify({ email: datos.email, token: datos.token })
+        );
+        setUsuarioLogueado(datos);
+        navegacion("/administrador");
+      } else {
+        Swal.fire(
+          "Error al iniciar sesión",
+          "Correo o contraseña incorrectos",
+          "error"
+        );
+      }
+    } catch (error) {}
   };
 
   return (
@@ -38,7 +46,12 @@ const Login = ({ setUsuarioLogueado }) => {
       <h2 className="mb-4 textoMorado text-center">Inicio de sesión</h2>
       <Row>
         <Col className="text-center" lg={4}>
-          <img src={login1} alt="persona levantando una barra con pesas" className="img-fluid" width={240} />
+          <img
+            src={login1}
+            alt="persona levantando una barra con pesas"
+            className="img-fluid"
+            width={240}
+          />
         </Col>
         <Col lg={4}>
           <Form
