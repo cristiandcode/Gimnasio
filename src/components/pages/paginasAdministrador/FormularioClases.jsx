@@ -34,6 +34,7 @@ const FormularioClases = ({ creando }) => {
       setValue("profesor", clase.profesor);
       setValue("fecha", clase.fecha);
       setValue("horario", clase.horario);
+      setValue("usuarios", clase.usuarios);
     }
   };
 
@@ -79,8 +80,8 @@ const FormularioClases = ({ creando }) => {
             {...register("clase", {
               required: "La clase es obligatoria",
               minLength: {
-                value: 5,
-                message: "Debe ingresar como minimo 5 caracteres para la clase",
+                value: 3,
+                message: "Debe ingresar como minimo 3 caracteres para la clase",
               },
               maxLength: {
                 value: 25,

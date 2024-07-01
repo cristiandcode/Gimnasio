@@ -16,7 +16,7 @@ const Clases = ({ clase, setClases }) => {
       cancelButtonText: "Cancel",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        const respuesta = await eliminarClase(clase.id);
+        const respuesta = await eliminarClase(clase._id);
         if (respuesta.status === 200) {
           Swal.fire({
             title: "Eliminado!",
@@ -47,7 +47,7 @@ const Clases = ({ clase, setClases }) => {
       <td className="text-center">{clase.horario}</td>
       <td className="text-center">{clase.usuarios}</td>
       <td className="text-center">
-        <Link className="me-lg-2 btn btn-warning" to={'/administrador/editarClases/'+ clase.id}>
+        <Link className="me-lg-2 btn btn-warning" to={'/administrador/editarClases/'+ clase._id}>
           <i className="bi bi-pencil-square"></i>
         </Link>
         <Button variant="danger">
