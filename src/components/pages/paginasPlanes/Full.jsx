@@ -283,7 +283,7 @@ const Full = () => {
             </Button>
           </Form>
         </Col>
-        <Col className="text-center" lg={6}>
+        <Col className="text-center d-none d-lg-block" lg={6}>
           <img
             src={logo}
             alt="logo gym"
@@ -293,7 +293,7 @@ const Full = () => {
           <h2 className="display-3 textoMorado">STK GYM</h2>
           <img
             src={full}
-            alt="mujer entrenando"
+            alt="hombre musculoso"
             className="img-fluid my-5"
             width={380}
           />
