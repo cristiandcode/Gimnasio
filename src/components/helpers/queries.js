@@ -32,6 +32,7 @@ export const crearClase = async (claseNueva) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "x-token": JSON.parse(localStorage.getItem("usuarioGym")).token,
       },
       body: JSON.stringify(claseNueva),
     });
@@ -45,6 +46,9 @@ export const eliminarClase = async (id) => {
   try {
     const respuesta = await fetch(URIClases + id, {
       method: "DELETE",
+      headers: {
+        "x-token": JSON.parse(localStorage.getItem("usuarioGym")).token,
+      },
     });
     return respuesta;
   } catch (error) {
@@ -67,6 +71,7 @@ export const editarClase = async (claseActualizada, id) => {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
+        "x-token": JSON.parse(localStorage.getItem("usuarioGym")).token,
       },
       body: JSON.stringify(claseActualizada),
     });

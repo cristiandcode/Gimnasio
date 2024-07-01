@@ -26,7 +26,7 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
             <NavLink end className="nav-link" to="/">
               Inicio
             </NavLink>
-            {usuarioLogueado.length ? (
+            {usuarioLogueado.email ? (
               <>
                 <NavLink end className="nav-link" to="/administrador">
                   Administrador

@@ -37,7 +37,13 @@ const Login = ({ setUsuarioLogueado }) => {
           "error"
         );
       }
-    } catch (error) {}
+    } catch (error) {
+      Swal.fire(
+        "Ocurrió un error",
+        "Error procesando la respuesta del servidor",
+        "error"
+      );
+    }
   };
 
   return (
