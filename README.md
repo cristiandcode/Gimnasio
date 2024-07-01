@@ -35,8 +35,6 @@
 - [📋 Licencia](#licencia)
 
 ## 💻 Sobre GYM
-<img src="" />
-
 # Descripcion mas a fondo del proyecto
 
 ## ⚒️ Tecnologías Implementadas
