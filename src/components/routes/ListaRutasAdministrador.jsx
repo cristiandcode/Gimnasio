@@ -24,7 +24,7 @@ const ListaRutasAdministrador = () => {
       ></Route>
       <Route
         exact
-        path="/editarClases"
+        path="/editarClases/:id"
         element={<FormularioClases creando={false}></FormularioClases>}
       ></Route>
     </Routes>

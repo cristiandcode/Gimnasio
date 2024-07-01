@@ -38,3 +38,38 @@ export const crearClase = async (claseNueva) => {
     console.error(error);
   }
 };
+
+export const eliminarClase = async (id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases/" + id, {
+      method: "DELETE",
+    });
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const obtenerClase = async (id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases/" + id);
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const editarClase = async (claseActualizada, id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/clases/" + id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(claseActualizada),
+    });
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+  }
+};
