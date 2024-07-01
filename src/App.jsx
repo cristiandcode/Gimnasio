@@ -16,6 +16,7 @@ import PlanClases from "./components/pages/paginasPlanes/PlanClases";
 import Full from "./components/pages/paginasPlanes/Full";
 import Nosotros from "./components/pages/Nosotros";
 
+
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
   const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
@@ -58,6 +59,7 @@ function App() {
         <Route exact path="/Full/" element={<Full></Full>}></Route>
         <Route exact path="*" element={<Error404></Error404>}></Route>
       </Routes>
+      
       <Footer></Footer>
     </BrowserRouter>
   );
