@@ -1,23 +1,23 @@
 <!-- Readme -->
 # Gimnasio
 <div align= "center">
-    <a href=''>
+    <a href='https://stkgym.netlify.app/'>
     <img src= "./src/assets/logoR.jpg">
     </a>
     <h1>GYM SKT</h1>
     <p>
      Ubicado en el microcentro de Tucumán, nuestro gimnasio ofrece modernas instalaciones con equipos de última generación, planes de entrenamiento personalizados por entrenadores expertos, y una amplia selección de proteínas y suplementos nutricionales. Con un ambiente motivador y programas grupales, es el lugar ideal para alcanzar tus objetivos de fitness y bienestar. ¡Visítanos y transforma tu vida!
     <br>
-    <a href=''>
+    <a href='https://stkgym.netlify.app/'>
     <strong>Explorar pagina » </strong>
     </a>
     <br>
     <br>
-    <a href=''>
+    <a href='https://stkgym.netlify.app/'>
     Reportar un problema
     </a>
     ·
-    <a href=''>
+    <a href='https://stkgym.netlify.app/'>
     Solicitar una mejora
     </a>
     </p>
