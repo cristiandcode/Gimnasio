@@ -83,7 +83,7 @@ Para contribuir, por favor seguir los siguientes pasos:
 
 
 _Cristian Ivan Diaz_
-- Github: https://github.com/CristianDecidueye
+- Github: https://github.com/cristiandcode
 
 _Claudia Alejandra Torres_
 - Github: https://github.com/Claudia604
