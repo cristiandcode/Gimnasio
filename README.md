@@ -62,7 +62,7 @@
 Clonar repositorio:
 
 ```bash
-git clone https://github.com/CristianDecidueye/Gimnasio.git
+git clone https://github.com/cristiandcode/Gimnasio.git
 ```
 
 -Asegurarse que se encuentra la rama `main`
