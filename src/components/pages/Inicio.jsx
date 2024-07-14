@@ -79,7 +79,7 @@ const MainComponent = () => {
               src="https://images.ctfassets.net/nhduxlsunsu5/6qfFcaklsK0ZdsPHRFCn7u/bb36b04116cfafd76e81bc8347c3e8a1/PF_Web_CB_Store_copy.jpg"
               alt="Ropa deportiva"
               fluid
-              className="rounded float-end  img-fluid"
+              className="rounded float-end img-fluid"
             />
           </Col>
         </Row>
