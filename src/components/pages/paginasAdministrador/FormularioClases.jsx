@@ -70,8 +70,13 @@ const FormularioClases = ({ creando }) => {
 
   return (
     <Container className="mainSection">
-      <h1 className="display-4 mt-5 textoMorado text-center">Administrar Clases</h1>
-      <Form className="my-4 bgMorado textoClaro p-3" onSubmit={handleSubmit(claseValidada)}>
+      <h1 className="display-4 mt-5 textoMorado text-center">
+        Administrar Clases
+      </h1>
+      <Form
+        className="my-4 bgMorado textoClaro p-3"
+        onSubmit={handleSubmit(claseValidada)}
+      >
         <Form.Group className="mb-3" controlId="formClase">
           <Form.Label>Clase*</Form.Label>
           <Form.Control
@@ -144,27 +149,25 @@ const FormularioClases = ({ creando }) => {
               },
             })}
           />
-          <Form.Group className="mb-3" controlId="formUsuarios">
-            <Form.Label>Usuarios Inscriptos*</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Ej: claudia"
-              {...register("usuarios", {
-                required: "Los usuarios inscriptos son obligatorios",
-                minLength: {
-                  value: 3,
-                  message:
-                    "Debe ingresar como minimo 3 caracteres para los usuarios",
-                },
-              })}
-            />
-            <Form.Text className="text-danger">
-              {errors.clase?.message}
-            </Form.Text>
-          </Form.Group>
           <Form.Text className="text-danger">
             {errors.horario?.message}
           </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formUsuarios">
+          <Form.Label>Usuarios Inscriptos*</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ej: claudia"
+            {...register("usuarios", {
+              required: "Los usuarios inscriptos son obligatorios",
+              minLength: {
+                value: 3,
+                message:
+                  "Debe ingresar como minimo 3 caracteres para los usuarios",
+              },
+            })}
+          />
+          <Form.Text className="text-danger">{errors.usuarios?.message}</Form.Text>
         </Form.Group>
         <Button type="submit" variant="light">
           Guardar
