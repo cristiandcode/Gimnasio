@@ -1,10 +1,12 @@
 import React from 'react';
 import { Carousel, Container, Row, Col, Image } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import Clima from '../Clima';
 
 const MainComponent = () => {
   return (
     <div className="main-container justify-content-center">
+      <Clima />
       <Carousel>
         <Carousel.Item>
           <img
