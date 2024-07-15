@@ -41,7 +41,7 @@ const Weather = () => {
   }
 
   return (
-    <div className='text-align-right'>
+    <div className='text-align-center'>
       <h6>Clima en {weatherData.name}</h6>
       <p>{weatherData.main.temp}°C</p>
     </div>
