@@ -41,12 +41,12 @@ const Clases = ({ clase, setClases }) => {
 
   return (
     <tr>
-      <td className="text-center">{clase.clase}</td>
-      <td className="text-center">{clase.profesor}</td>
-      <td className="text-center">{clase.fecha}</td>
-      <td className="text-center">{clase.horario}</td>
-      <td className="text-center">{clase.usuarios}</td>
-      <td className="text-center">
+      <td className="text-center tablaAdminResponsive">{clase.clase}</td>
+      <td className="text-center tablaAdminResponsive">{clase.profesor}</td>
+      <td className="text-center tablaAdminResponsive">{clase.fecha}</td>
+      <td className="text-center tablaAdminResponsive">{clase.horario}</td>
+      <td className="text-center tablaAdminResponsive">{clase.usuarios}</td>
+      <td className="text-center tablaAdminResponsive">
         <Link className="me-lg-2 btn btn-warning" to={'/administrador/editarClases/'+ clase._id}>
           <i className="bi bi-pencil-square"></i>
         </Link>

@@ -27,7 +27,7 @@ const Administrador = () => {
   };
 
   return (
-    <Container className="mainSection tablaAdminResponsive">
+    <Container className="mainSection">
       <h1 className="mt-5 text-center textoMorado">
         Bienvenido al panel de Administración
       </h1>
