@@ -15,7 +15,7 @@ import Musculacion from "./components/pages/paginasPlanes/Musculacion";
 import PlanClases from "./components/pages/paginasPlanes/PlanClases";
 import Full from "./components/pages/paginasPlanes/Full";
 import Nosotros from "./components/pages/Nosotros";
-
+import Weather from "./components/pages/Weather";
 
 function App() {
   const usuario = JSON.parse(localStorage.getItem("usuarioGym")) || {};
@@ -29,6 +29,8 @@ function App() {
       ></Menu>
       <Routes>
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
+        <Route exact path="/" element={<Weather></Weather>}></Route>
+
         <Route
           exact
           path="/administrador/*"
@@ -46,6 +48,7 @@ function App() {
         <Route exact path="/Registro/" element={<Error404></Error404>}></Route>{" "}
         <Route exact path="/Contacto/" element={<Contacto></Contacto>}></Route>
         <Route exact path="/Nosotros/" element={<Nosotros></Nosotros>}></Route>
+        
         <Route
           exact
           path="/Musculacion/"

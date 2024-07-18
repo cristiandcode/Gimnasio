@@ -1,11 +1,12 @@
 import React from "react";
 import { Carousel, Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import Weather from "./Weather";
 const MainComponent = () => {
   return (
     <section className="justify-content-center">
       <Container fluid className="mt-5">
+        <Weather/>
         <Carousel>
           <Carousel.Item>
             <img
