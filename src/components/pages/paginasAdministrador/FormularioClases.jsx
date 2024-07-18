@@ -149,6 +149,7 @@ const FormularioClases = ({ creando }) => {
               },
             })}
           />
+          
           <Form.Text className="text-danger">
             {errors.horario?.message}
           </Form.Text>
